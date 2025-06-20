@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Swasthya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 130px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(13, 13, 123);
+      margin: 10px;
+    }
+
+    nav a:hover {
+      color: darkred;
+    }
+
+    /* Page Content */
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 36px;
+      color: #0d0d7b;
+    }
+
+    p.description {
+      text-align: justify;
+      font-style: italic;
+      font-size: 18px;
+      padding: 30px 50px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e9ecef;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    .footer-contact h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer-contact p {
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .footer-bottom {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      p.description {
+        padding: 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="logo">
+    <img src="org.jpeg" alt="Logo">
+    <nav class="navbar">
+      <a href="#">HOME</a>
+      <a href="#">HOSPITALS NEARBY</a>
+      <a href="#">DOCTORS INFORMATION</a>
+      <a href="form.html">BOOK APPOINTMENTS</a>
+      <a href="#">ABOUT US</a>
+      <a href="form1.html">LOGIN</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <h2>SWASTHYA</h2>
+  <p class="description">
+    Swasthya is a pioneering healthcare companion dedicated to guiding patients seamlessly through their medical journey.
+    With Swasthya, locating a doctor or hospital nearby is as effortless as it is efficient. Our intuitive platform harnesses
+    cutting-edge technology to provide users with a comprehensive directory of healthcare providers tailored to their specific
+    needs and location. Whether you seek a trusted general practitioner or a specialist in a particular field, Swasthya not only
+    connects you with the right professionals but also offers insightful information on their specialisms and areas of expertise.
+    From cardiology to dermatology, orthopedics to pediatrics, Swasthya ensures that every patient can make informed decisions
+    about their healthcare, fostering confidence and empowerment every step of the way.
+    <br><br>
+    Swasthya stands at the forefront of healthcare innovation, revolutionizing the patient experience by simplifying the daunting
+    task of finding the right doctor or hospital. Seamlessly integrated into our daily lives, Swasthya's platform provides a user-friendly
+    interface that effortlessly connects individuals with nearby healthcare facilities and practitioners. Whether it's a routine check-up
+    or a specialized treatment, Swasthya streamlines the process, empowering patients with the knowledge they need to make informed
+    decisions. From renowned specialists in cardiology to esteemed dermatologists and beyond, Swasthya facilitates personalized healthcare
+    solutions tailored to individual needs. With Swasthya, navigating the complexities of healthcare becomes a breeze, fostering confidence
+    and peace of mind on the journey toward optimal well-being.
+  </p>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: info@swasthya.com</p>
+      <p>Phone: +1234567890</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Swasthya. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
