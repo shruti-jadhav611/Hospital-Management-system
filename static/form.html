@@ -98,22 +98,32 @@
   <div class="container">
     <h2>Book an Appointment</h2>
     <form action="#" method="post">
+      
       <div class="form-group">
         <label for="full_name">Full Name:</label>
         <input type="text" id="full_name" name="full_name" required>
       </div>
+
       <div class="form-group">
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
       </div>
+
       <div class="form-group">
         <label for="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" required>
       </div>
+
+      <div class="form-group">
+        <label for="hospitalInput">Hospital Name:</label>
+        <input type="text" id="hospitalInput" name="hospital" placeholder="Hospital Name" />
+      </div>
+
       <div class="form-group">
         <label for="appointment_date">Preferred Date:</label>
         <input type="date" id="appointment_date" name="appointment_date" required>
       </div>
+
       <div class="form-group">
         <label for="department">Department:</label>
         <select id="department" name="department" required>
@@ -124,19 +134,45 @@
           <!-- Add more as needed -->
         </select>
       </div>
+
       <div class="form-group">
         <label for="doctor">Doctor:</label>
-        <input type="text" id="doctor" name="doctor" required>
+        <input type="text" id="doctor" name="doctor" placeholder="Doctor Name">
       </div>
+
       <div class="form-group">
         <label for="comments">Comments (Optional):</label>
-        <textarea id="comments" name="comments"></textarea>
+        <textarea id="comments" name="comments" placeholder="Additional notes..."></textarea>
       </div>
+
       <div class="form-group">
         <input type="submit" value="Book Appointment">
       </div>
+
     </form>
   </div>
+
+  <script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const hospital = params.get("hospital");
+      const doctor = params.get("doctor");
+
+      if (hospital) {
+        const hospitalInput = document.getElementById("hospitalInput");
+        if (hospitalInput) {
+          hospitalInput.value = decodeURIComponent(hospital);
+        }
+      }
+
+      if (doctor) {
+        const doctorInput = document.getElementById("doctor");
+        if (doctorInput) {
+          doctorInput.value = decodeURIComponent(doctor);
+        }
+      }
+    };
+  </script>
 
 </body>
 </html>

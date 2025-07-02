@@ -1,207 +1,4 @@
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWASTHYA</title>
-   
-    <link rel="stylesheet" href="style.css"> -->
-    <!-- <style>
-        .bg {
-          background-image: url("static/doc img2.jpeg");
-          height: 80vh;
-          background-position: center;
-          background-repeat: no-repeat;
-          position: relative;
-          display: flex;
-          justify-content: space-around;
-          align-items: space-around;
-          justify-content: center;
-          display: flex;
-          align-items: center;
-          position: relative;
-          color: white;
-          font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 120px;
-          font-style: italic;
-          text-align: center;
-          text-shadow: 6px 5px 6px black;
-          input {
-              font-size: 50px;
-              text-size-adjust: 15px;
-
-              border-radius: 40px;
-              cursor: pointer;
-              border: none;
-          }
-        }
-        .logo {}
-        nav {
-          display: inline;
-          justify-content: space-evenly;
-          align-items: space-around;
-          padding: 14px;
-          font-size: 25px;
-          font-weight: bold;
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        }
-
-        a {
-          display: inline;
-          justify-content: center;
-          align-items: center;
-          font-style: italic;
-          margin: 20px;
-          text-decoration: double;
-          color: rgb(13, 13, 123);
-        }
-
-        .Icons {
-          font-size: 30px;
-          color: darkblue;
-          margin: 10px 450px 220px 20px;
-        }
-
-        .flex-container {
-          display: flex;
-          
-          justify-content: space-between;
-          align-items:center;
-
-          button{
-              display:flex;
-              justify-content:space-between;
-              margin: 8px;
-              border:px;
-              border-color: rgb(26, 26, 156);
-              padding: 10px;
-              border-radius: 40px;
-              font-size:25px;
-              width:300px;
-              text-align:center;
-             }
-             span{
-
-              font-size:70px; 
-          }
-          a{
-              display:inline-block;
-              justify-content: center;
-              align-items: self-start;
-              font-size: 30px;
-
-          }
-        }
-        button:hover{
-              background-color: darkblue;
-        }
-
-    
-    </style> -->
-    
-    
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
-<!-- </head>
-
-<body> -->
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
-    <!-- <div class="logo">
-        <img width="200" height="120" src="static/org.jpeg" alt="">
-
-        <nav>
-
-            <a href="">HOME</a>
-            <a href="hospitals.html">HOSPITALS NEARBY</a>
-            <a href="doctors.html">DOCTORS INFORMATION</a>
-            <a href="static/form.html">BOOK APPOINTMENTS</a>
-            <a href="static/about.html">ABOUT US</a>
-            <a href="static/form1.html">LOGIN</a>
-
-        </nav>
-    </div> -->
-
-
-    <!--<img width="1500"src="img/doc img2.jpeg" alt="">-->
-    <!-- <div class="bg">
-        <span>SWASTHYA
-            <br>
-            <input type="text" placeholder="search your service">
-        </span>
-
-        <div>
-
-        </div>
-
-    
-    </div> <br>
-    <div style="display: flex;justify-content:space-between;">
-        <div><img width="300px" style=" align-items: center;justify-content:space-between; padding: 50px;"  src="static/doc 1.jpg" alt=""></div>
-        <div><h2 style="text-align: center;"
-            >SWASTHYA</h2>
-        <p style="text-align:center;font-size: 25px;border:100px;">Introducing Swasthya, your personalized healthcare concierge. Swasthya is dedicated to simplifying your healthcare journey by connecting you with the perfect hospital and doctor to suit your individual requirements. Our intuitive platform utilizes cutting-edge technology to match you with the finest medical facilities and practitioners, ensuring that your health needs are met with precision and care. With Swasthya, navigating the complexities of healthcare becomes effortless, empowering you to make informed decisions and embark on your path to wellness with confidence.</p></div>
-        
-    </div>
-    
-    <div class="flex-container">
-        
-        <p>
-        <button>SERVICES</button><br>
-        <button>TREATMENT OPTIONS</button><br>
-        <button>LATEST BLOGS</button><br>
-        <button>FREQUENTLY ASKED QUESTIONS</button><br>
-        </p>
-        <div>
-        <span>What are you looking for?</span>
-        <div>
-        <a href="{{ url_for("static",filename="cardiology.html")}}">Cardiac Science</a>
-        <a href="">Oncology</a>
-        <a href="">Transplants</a>
-        </div>
-        <div>
-        <a href="{{ url_for("static",filename="neurology.html")}}">Neuro Science</a>
-        <a href="">Pulmonology</a>
-        <a href="">Nephrology</a>
-        </div>
-        <div>
-        <a href="">Paediatrics</a>
-        <a href="">Orthopaedics</a>
-        <a href="">Robot Assisted Surgery</a>
-        </div>
-        <div>
-        <a href="">Gastro Science</a>
-        <a href="">Urology</a>
-        <a href="">Women & Child Institute</a>
-        </div>
-    </div>
-  
-    
-</div>
-<footer style="text-align: center;">
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <p>Email: info@swasthya.com</p>
-        <p>Phone: +1234567890</p>
-        <p>Address: 123 Main Street, City, Country</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Swasthya. All rights reserved.</p>
-    </div>
-  </footer>
-  
-  
-  
-
-    
-</body>
-</html> -->
-
-
-
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -485,6 +282,327 @@
   </div>
 
   <footer style="text-align: center;">
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: info@swasthya.com</p>
+      <p>Phone: +1234567890</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Swasthya. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWASTHYA</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .navbar a {
+      position: relative;
+      text-decoration: none;
+      color: rgb(13, 13, 123);
+      transition: color 0.3s ease;
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: darkred;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      color: darkred;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
+    .bg {
+      background-image: url("static/doc img2.jpeg");
+      height: 80vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 6vw;
+      font-style: italic;
+      text-align: center;
+      text-shadow: 6px 5px 6px black;
+      flex-direction: column;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .bg input {
+      margin-top: 20px;
+      font-size: 2vw;
+      padding: 10px 20px;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+
+    .bg input:hover {
+      background-color: #ffffffa8;
+      color: darkblue;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .flex-container span {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .flex-container ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .flex-container li {
+      font-size: 1.2rem;
+      margin: 8px 0;
+      color: #333;
+    }
+
+    .flex-container a {
+      text-decoration: none;
+      color: darkblue;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .flex-container a:hover {
+      color: darkred;
+    }
+
+    footer {
+      background-color: #e9ecef;
+      padding: 30px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .footer-contact h3 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .footer-contact p {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .footer-bottom p {
+      margin-top: 20px;
+      color: #777;
+    }
+
+    @media screen and (max-width: 768px) {
+      .bg {
+        font-size: 12vw;
+      }
+
+      .bg input {
+        font-size: 5vw;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+      }
+
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .flex-container span {
+        font-size: 1.5rem;
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .bg,
+    .navbar,
+    .flex-container,
+    footer {
+      animation: fadeInUp 1s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="static/org.jpeg" alt="Logo">
+    <nav class="navbar">
+      <a href="">HOME</a>
+      <a href="hospitals.html">HOSPITALS NEARBY</a>
+      <a href="doctors.html">DOCTORS INFORMATION</a>
+      <a href="static/form.html">BOOK APPOINTMENTS</a>
+      <a href="static/about.html">ABOUT US</a>
+      <a href="static/form1.html">LOGIN</a>
+    </nav>
+  </div>
+
+  <div class="bg">
+    <span>SWASTHYA <br>
+    </span>
+  </div>
+
+  <br>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <div><img width="500px"  style="padding: 50px;" src="static/doc 1.jpg" alt=""></div>
+    <div>
+      <h2 style="text-align: center;">SWASTHYA</h2>
+      <p style="text-align:center;font-size: 20px; padding: 20px; max-width: 800px;">Introducing Swasthya, your personalized healthcare concierge. Swasthya is dedicated to simplifying your healthcare journey by connecting you with the perfect hospital and doctor to suit your individual requirements. Our intuitive platform utilizes cutting-edge technology to match you with the finest medical facilities and practitioners, ensuring that your health needs are met with precision and care. With Swasthya, navigating the complexities of healthcare becomes effortless, empowering you to make informed decisions and embark on your path to wellness with confidence.</p>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div>
+      <span>Our Services</span>
+      <ul>
+        <li>24/7 Emergency Care</li>
+        <li>In-House Pharmacy</li>
+        <li>Advanced Diagnostic Lab</li>
+        <li>Health Checkup Packages</li>
+        <li>Online Appointment Booking</li>
+      </ul>
+    </div>
+
+    <div>
+      <span>Departments</span>
+      <ul>
+        <li><a href="static/cardiology.html">Cardiology</a></li>
+        <li><a href="static/neurology.html">Neurology</a></li>
+        <li><a href="static/orthopedics.html">Orthopedics</a></li>
+        <li><a href="static/pediatrics.html">Pediatrics</a></li>
+        <li><a href="static/general_surgery.html">General Surgery</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <span>Why Choose Swasthya?</span>
+      <ul>
+        <li>NABH Accredited Hospitals</li>
+        <li>Experienced Doctors & Surgeons</li>
+        <li>Modern Infrastructure & Equipment</li>
+        <li>Affordable Care Packages</li>
+        <li>Multilingual Support</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex-container" style="flex-direction: column; align-items: center; background-color: #f8f9fa; padding: 40px 20px; margin-top: 40px;">
+    <span style="font-size: 2rem; color: darkblue; margin-bottom: 20px;">Frequently Asked Questions</span>
+    <div style="max-width: 900px; width: 100%; background-color: #ffffff; padding: 30px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <details style="margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #0d0d7b;">How do I book an appointment online?</summary>
+        <p style="margin-top: 10px; color: #555; font-size: 1rem;">You can book an appointment by clicking on the “Book Appointments” link in the navigation bar. Select your department, doctor, and time slot to confirm your booking.</p>
+      </details>
+      <details style="margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #0d0d7b;">Do you provide emergency services?</summary>
+        <p style="margin-top: 10px; color: #555; font-size: 1rem;">Yes, our emergency services are available 24/7. We have dedicated trauma and ambulance services at your disposal.</p>
+      </details>
+      <details style="margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #0d0d7b;">Can I access my reports online?</summary>
+        <p style="margin-top: 10px; color: #555; font-size: 1rem;">Yes, once your tests are complete, you can log in using your credentials to access medical reports under the 'Patient Dashboard'.</p>
+      </details>
+      <details style="margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+        <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #0d0d7b;">Do you have insurance tie-ups?</summary>
+        <p style="margin-top: 10px; color: #555; font-size: 1rem;">We have partnerships with most major health insurance providers. Please contact our reception or billing department for more info.</p>
+      </details>
+      <details style="margin-bottom: 0;">
+        <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #0d0d7b;">What languages do your staff speak?</summary>
+        <p style="margin-top: 10px; color: #555; font-size: 1rem;">Our staff can assist you in English, Hindi, Marathi, and several regional languages for better communication and comfort.</p>
+      </details>
+    </div>
+  </div>
+
+  <footer>
     <div class="footer-contact">
       <h3>Contact Us</h3>
       <p>Email: info@swasthya.com</p>
